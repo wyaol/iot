@@ -6,6 +6,7 @@
 from flask import Flask, render_template
 import flask_cors
 from views import view_page
+import config
 
 app = Flask(__name__)
 app.register_blueprint(view_page)
@@ -23,4 +24,4 @@ def index():
 
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0', port='5000')
+    app.run(host=config.WEB_IP, port=config.WEB_PORT, debug=config.DEBUG)

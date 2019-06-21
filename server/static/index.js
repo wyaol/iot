@@ -2,7 +2,7 @@ var IP = window.location.host;
 
 
 var init_echart = function() {
-    let data_len = 20;
+    let data_len = 15;
     var y_data = new Array(data_len), i=y_data.length;
     while(i--){y_data[i] = 0;}
     // 基于准备好的dom，初始化echarts实例
@@ -18,7 +18,7 @@ var init_echart = function() {
             type: 'value',
             scale:true,
             min: function(value) {
-                return value.min - 20;
+                return value.min - 10;
             } // value 包含最小值value.min
         },
         series: [{
