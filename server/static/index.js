@@ -65,7 +65,7 @@ var lamp_change = function(e, choose) {
     }
     axios.get(url)
       .then(function (response) {
-        set_lamp();
+        lamp_state();
       })
       .catch(function (error) {
         console.log(error);
