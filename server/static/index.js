@@ -1,12 +1,8 @@
 var IP = window.location.host;
 
 
-
-
 var init_echart = function() {
     let data_len = 20;
-    // var x_data = new Array(data_len), i=x_data.length;
-    // while(i--){x_data[i] = '';}
     var y_data = new Array(data_len), i=y_data.length;
     while(i--){y_data[i] = 0;}
     // 基于准备好的dom，初始化echarts实例

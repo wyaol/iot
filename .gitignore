@@ -2,3 +2,4 @@
 /server/venv/
 /server/test/
 .idea
+/.gitignore

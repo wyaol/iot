@@ -3,12 +3,13 @@
 <head>
 	<title>实时监控</title>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="style/weui.css"/>
+	<link rel="stylesheet" href="/static/style/weui.css"/>
 	<!-- <script type="text/javascript" src='index.js'></script> -->
 	<!-- 引入 echarts.js -->
-    <script src="style/echarts.min.js"></script>
+    <script src="/static/style/echarts.min.js"></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script type="text/javascript" src='index.js'></script>
+    <script type="text/javascript" src='/static/index.js'></script>
+    <script type="text/javascript" src='/static/config.js'></script>
 </head>
 <body ontouchstart>
 
@@ -44,8 +45,8 @@
     	// lamp_state();
     	init_echart();
     	//ai_lamp();
-    	window.setInterval(ai_lamp, 350); 
-    	window.setInterval(lamp_state, 350); 
+    	window.setInterval(ai_lamp, FRESH_LAMP_TIME);
+    	window.setInterval(lamp_state, FRESH_AI_INFO_TIME);
     </script>
 
 </body>
